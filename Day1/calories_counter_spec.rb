@@ -25,5 +25,17 @@ describe CaloriesCounter do
             calories = counter.calculate("1000\n2000\n3000")
             expect(calories).to eq(6000)
         end
+        it "Return 4000" do
+            counter = CaloriesCounter.new
+            calories = counter.calculate("4000")
+            expect(calories).to eq(4000)
+        end
+        it "Return 11000" do
+            counter = CaloriesCounter.new
+            calories = counter.calculate("5000\n6000")
+            expect(calories).to eq(11000)
+        end
     end
+
+    
 end
