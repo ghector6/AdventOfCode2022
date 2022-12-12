@@ -9,7 +9,8 @@ class CaloriesCounter
 end 
 
 if __FILE__ == $0
+    elves_list = File.read("input.txt")
     counter = CaloriesCounter.new
-    calories = counter.calculate("1000\n2000\n3000")
-    p calories
+    most_calories = counter.most_calories(elves_list)
+    p most_calories
 end
