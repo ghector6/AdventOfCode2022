@@ -18,4 +18,12 @@ describe CaloriesCounter do
             expect(calories).to eq(3000)
         end
     end
+    
+    context "given a set of calories, return the total sum  of them" do
+        it "Return 6000" do
+            counter = CaloriesCounter.new
+            calories = counter.calculate("1000\n2000\n3000")
+            expect(calories).to eq(6000)
+        end
+    end
 end
