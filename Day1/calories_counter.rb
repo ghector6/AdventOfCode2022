@@ -1,6 +1,6 @@
 class CaloriesCounter
     def calculate(string)
-        1000 
+        string.to_i 
     end 
 
 end 
