@@ -45,6 +45,14 @@ describe CaloriesCounter do
             expect(calories).to eq(24000)
         end
     end
+    context "Part II" do
+        
+        it "return 45000" do
+            counter = CaloriesCounter.new
+            calories = counter.top_calories(3, "1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000")
+            expect(calories).to eq(45000)
+        end
+    end
 
     
 end
