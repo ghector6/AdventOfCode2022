@@ -7,7 +7,7 @@ describe ChinChanPu do
 		end
 
 		it 'returns A' do
-			result = instructions.cutter("A")
+			result = @instructions.cutter("A")
 			expect(result).to eq.("A")
 		end
 	end
