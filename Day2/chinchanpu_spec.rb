@@ -5,7 +5,8 @@ describe ChinChanPu do
 		it 'Returns: A' do 
 			instruction_set = ChinChanPu.new
 			instruction_element = instruction_set.cutter("A")
-			expect(instruction_element).to eq("A")
+			expect(instruction_element).to eq(["A"])
 		end
+		
 	end
 end
