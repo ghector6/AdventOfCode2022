@@ -6,7 +6,10 @@ class CampCleanup
         end
     end
 
-    def contain?(dummy)
-        false
+    def contain?(ranges)
+        ranges = sections(ranges)
+        a = ranges[0].to_set
+        b = ranges[1].to_set
+        a.subset?(b) || b.subset?(a)
     end
 end
