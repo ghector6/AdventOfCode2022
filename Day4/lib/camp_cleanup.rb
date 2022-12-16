@@ -13,3 +13,9 @@ class CampCleanup
         a.subset?(b) || b.subset?(a)
     end
 end
+
+if __FILE__ == $0
+    assignments = File.read("input.txt").split("\n")
+    campCleanup = CampCleanup.new
+    assignments.select{|n| campCleanup.contain?(n) }.size
+end
