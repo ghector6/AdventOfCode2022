@@ -17,7 +17,7 @@ describe ChinChanPu do
 	context 'Given a set of instructions, sums the points of the figure used' do 
 		it 'returns 1 if my figure used is rock (A)' do 
 			instruction_set = ChinChanPu.new
-			instruction_element = instruction_set.figure?(["A","X"])
+			instruction_element = instruction_set.figure?
 			expect(instruction_element).to eq(1)
 		end
 
