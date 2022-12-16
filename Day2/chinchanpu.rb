@@ -1,5 +1,5 @@
 class ChinChanPu
 	def cutter(string)
-		return "A"
+		string
 	end
 end
