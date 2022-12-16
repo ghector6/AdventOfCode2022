@@ -4,13 +4,11 @@ class ChinChanPu
 	end
 	def cutter
 		@instruction
-
 	end
 
 	def figure?
 
-		figure_points = 0
-		
+		figure_points = 0		
 
 		case @instruction[1]
 		when "X"
@@ -20,6 +18,14 @@ class ChinChanPu
 		when "Z"
 			figure_points  =figure_points + 3
 		end
+
+		figure_points
 		
 	end
+end
+
+if __FILE__ == $0
+	input_test = File.readlines('input.txt')
+	counter = ChinChanPu.new(input_test.split('').figure?)
+	p counter
 end
