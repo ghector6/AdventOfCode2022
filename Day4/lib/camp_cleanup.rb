@@ -5,4 +5,8 @@ class CampCleanup
             a..b
         end
     end
+
+    def contain?(dummy)
+        false
+    end
 end
